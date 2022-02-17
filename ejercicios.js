@@ -113,3 +113,31 @@ let persona1 = new Persona("Kevin", "Efraim", fecha1);
 console.log(persona1.canDrink());
 
 //--------------Ejercicio 9--------------------
+
+class Calc {
+  constructor(value1, value2) {
+    this.value1 = value1;
+    this.value2 = value2;
+  }
+  suma() {
+    return this.value1 + this.value2;
+  }
+  resta() {
+    return this.value1 - this.value2;
+  }
+  multiplicacion() {
+    return this.value1 * this.value2;
+  }
+  division() {
+    return this.value1 / this.value2;
+  }
+  potenciacion() {
+    return Math.pow(this.value1, this.value2);
+  }
+  raizCuadrada() {
+    return Math.sqrt(this.value1);
+  }
+}
+
+console.log(new Calc(3, 4).suma());
+console.log(new Calc(3, 4).resta());
